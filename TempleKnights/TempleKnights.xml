@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<game-graph>
+	<location id="1" name="Bayt Sahur">
+		<description> Your awaken from a hazy dream to a note left on your door. It reads: Mario you must collect the Holy Grail from the Temple Mount and bring it to Cyprus were as a reward your Princess Peach will be set free. The city you currently reside in will provide you with the Gold, Weapons and supplies you will need for your journey to Cyprus. Along the way you will be given options of different paths to choose from. One path will lead you through the dessert, this path will be longer/more cost effective but will be easier with less enemies, The other path will be by the sea, this path is less cost effective and shorter but the amount of enemies you will face will be far more greater and they will be harder to kill.You see only one exit to the south.</description>
+	    <exit title="Temple Mount" direction="S"/>	
+	</location>
+	<location id="2" name="Temple Mount">
+		<description> You arrive at the destination of Temple Mount where your mission is to collect the Holy Grail, there is an old man who stands before you who tries to fight you but is too old to defend himself. He eventually calms down and turns to you and lets you know that he is the last of three brothers who defends the Holy Grail. He passes the keepers test and tells you to choose wisely as if you take the wrong one you the Grail will take your life and the right one will give you internal life until your killed by combat... You have choosen the correct cup it is not what you would expect as it is old and worn out and looks like its tens of thousands of years old. There are 2 exits one to the West and another to the East.</description>
+	    <exit title="Netanya" direction="W"/>
+	    <exit title="Jaba" direction="E"/>
+	</location>
+	
+	<location id="3" name="Jaba">
+		<description> The town of Jaba is your first stop towards the desert route. The town is very empty, there is no buildings just little huts that the town people reside in. There is not one civilian to be seen either. There are two exits one to the West and one up North.</description>
+	    <exit title="Netanya" direction="W"/>
+	    <exit title="Nazareth" direction="N"/>
+	</location>
+
+	<location id="4" name="Nazareth">
+		<description> Nazareth is one of the largest cities on this route, it is full of high rise buildings and plenty of people to meet and greet. There are two exits one to the West and one up North.</description>
+		<exit title="Haifa" direction="W"/>
+	    <exit title="Al Qunaitra" direction="N"/>
+	</location>
+
+	<location id="5" name="Al Qunaitra">
+		<description> This is an old shanty town, No high rise buildings in sight, just three different exits to choose from West, North West and North</description>
+		<exit title="Sidon District" direction="W"/>
+	    <exit title="Beirut" direction="NW"/>
+	    <exit title="Damascus" direction="N"/>
+	</location>
+
+	<location id="6" name="Damascus">
+		<description> A bit of description of the town and There are two exits in front of you one to the West and one to the North.</description>
+	    <exit title="Beirut" direction="W"/>
+	    <exit title="Qarah" direction="N"/>
+	</location>
+
+	<location id="7" name="Qarah">
+		<description> There are two exits in front of you one to the West and one to the North.</description>
+	    <exit title="Tripoli" direction="W"/>
+	    <exit title="Hamah" direction="N"/>
+	</location>
+
+	<location id="8" name="Hamah">
+		<description> There are three exits in front of you one to the West, one to the North and one back tracking to the South West.</description>
+	    <exit title="Latakia" direction="W"/>
+	    <exit title="Antioch" direction="N"/>
+	    <exit title="Tripoli" direction="SW"/>
+	</location>
+
+	<location id="9" name="Antioch">
+		<description> You have reached the glorious town of Antioch were you have almost complete your journey to Cyprus with the Holy Grail, All that stands in your way is to find a man who owns a boat and to give you a journey. Or you could kill him and steal his boat. The docks are out at sea which is West.</description>
+	    <exit title="Cyprus" direction="W"/>
+	</location>
+
+	<location id="10" name="Netanya">
+		<description> You have just brought the Holy Grail to the next town were there are people looking for the same item that you have. You see an exit both to the North and back inland to the East, All along the West is the coast.</description>
+	    <exit title="Haifa" direction="N"/>
+	    <exit title="Jaba" direction="E"/>
+	</location>
+
+	<location id="11" name="Haifa">
+		<description> There are two exits that are in front of you one to the North by the river and one back to the East.</description>
+	    <exit title="Sidon District" direction="N"/>
+	    <exit title="Nazareth" direction="E"/>
+	</location>
+
+	<location id="12" name="Sidon District">
+		<description> There are two exits that are in front of you one to the North by the river and one back to the East.</description>
+	    <exit title="Beirut" direction="N"/>
+	    <exit title="Al Qunaitra" direction="E"/>
+	</location>
+
+	<location id="13" name="Beirut">
+		<description> There are three exits that are in front of you one to the North by the river, one back to the East and the final one NorthEast.</description>
+	    <exit title="Tripoli" direction="N"/>
+	    <exit title="Damascus" direction="E"/>
+	    <exit title="Qarah" direction="NE"/>
+	</location>
+
+	<location id="14" name="Tripoli">
+		<description> There are three exits that are in front of you one to the North by the river, one back to the East and the final one NorthEast.</description>
+	    <exit title="Latakia" direction="N"/>
+	    <exit title="Qarah" direction="E"/>
+	    <exit title="Hamah" direction="NE"/>	
+	</location>
+
+	<location id="15" name="Latakia">
+		<description> There are two exits that are in front of you one to the North by the river and one back to the East.</description>
+	    <exit title="Antioch" direction="N"/>
+	    <exit title="Hamah" direction="E"/>
+	</location>
+
+	<location id="16" name="Cyprus">
+		<description> You have reached the island of Cyprus with the Holy Grail.</description>
+	    <exit title="Desert" direction="S"/>
+	</location>
+	
+	<!-- WEAPONS -->
+	<item name="Sword" type="gmit.Item.class" value="10" locationID="5" />
+	<item name="Mace" type="gmit.Item.class" value="15" locationID="8" />
+	<item name="Greek Fire" type="gmit.Item.class" value="30" locationID="9" />
+	<item name="Ray Gun" type="gmit.Item.class" value="40" locationID="13"/>
+	<item name="Hurl" type="gmit.Item.class" value="5" locationID="2"/>
+	<item name="Bow + Arrow" type="gmit.Item.class" value="10" locationID="4"/>
+	<item name="knife" type="gmit.Item.class" value="10" locationID="7"/>
+	<item name="Fists" type="gmit.Item.class"  value="2" locationID="1"/>
+	<item name="Pint Glass" type="gmit.Item.class" value="10" locationID="2"/>
+	<item name="Banana" type="gmit.Item.class" value="10" locationID="1"/>
+	<item name="Meat" type="gmit.Item.class" value="50" locationID="7"/>
+		
+	<!-- GAME CHARACTERS -->
+	<game-character id="7" name="Vicious Saracen" type="gmit.Saracen.class">
+		<search-algorithm name="gmit.AStar.class" />
+		<item name="Ray Gun" type="gmit.Weapon.class"/>
+	</game-character>
+	
+	<game-character id="12" name="Deadly Templar Knight" type="gmit.DeadlyTemplerKnight.class">
+		<search-algorithm name="gmit.AStar.class" />
+		<item name="Sword" type="gmit.Weapon.class"/>
+	</game-character>
+	
+	<game-character id="15" name="Nazgûl" type="gmit.Nazgul.class">
+		<search-algorithm name="gmit.AStar.class" />
+		<item name="Mace" type="gmit.Weapon.class"/>
+	</game-character>
+	
+	<game-character id="6" name="Folk" type="gmit.Folk.class">
+		<search-algorithm name="gmit.AStar.class" />
+		<item name="fists" type="gmit.Weapon.class"/>		
+	</game-character>
+	
+	<game-character id="2" name="Inn-Keeper" type="gmit.InnKeeper.class">
+		<search-algorithm name="gmit.AStar.class" />
+		<item name="Pint Glass" type="gmit.Weapon.class"/>
+	</game-character>
+	
+	<game-character id="3" name="Thief" type="gmit.Thief.class">
+		<search-algorithm name="gmit.AStar.class" />
+		<item name="knife" type="gmit.Weapon.class"/>
+	</game-character>
+</game-graph>
