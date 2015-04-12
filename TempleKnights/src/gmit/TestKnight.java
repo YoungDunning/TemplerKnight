@@ -11,7 +11,7 @@ import net.sourceforge.jFuzzyLogic.rule.Variable;
 
 public class TestKnight {
 	public static void main(String[] args) throws Exception{
-		String name = "fcl/templerknight.fcl";
+		String name = "fcl/rules.fcl";
 		FIS fis = FIS.load(name, true);
 		
 		if(fis == null){

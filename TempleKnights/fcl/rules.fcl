@@ -1,4 +1,3 @@
-
 FUNCTION_BLOCK knight	
 	VAR_INPUT				// Define input variables
 		hit : REAL;

@@ -28,8 +28,6 @@ public class Parser extends DefaultHandler{
 	
 	private String temp;
 	private ArrayList<Location> locat = new ArrayList<Location>();
-	private ArrayList<Exit> exitList = new ArrayList<Exit>();
-    private ArrayList<Character> characterList = new ArrayList<Character>();
     
 	boolean location = false;
 	boolean description = false;
@@ -38,7 +36,6 @@ public class Parser extends DefaultHandler{
 	boolean gameCharacter = false;
 	boolean searchAlgorithm = false;
 	
-	private static Scanner in;	
 	public static void main(String[] args) throws IOException, SAXException, ParserConfigurationException
 	{
 		//Parser factory used to create SAX parsers
@@ -78,48 +75,39 @@ public class Parser extends DefaultHandler{
         	switch (choice) {
 			case ("help"):
 				System.out.println("----Different commands for help----");
-				System.out.println("----1.look-To see where you are!----");
-				System.out.println("--- 2.go: to move from current location ---");
-				System.out.println("--- 3.get: to retrieve new item ---");
-				System.out.println("--- 4.pick up: to retrieve new item ---");
-				System.out.println("--- 5.use: to retrieve new item ---");
-				System.out.println("--- quit: to retrieve new item ---");
+				System.out.println("----1.LOOK-To see where you are!----");
+				System.out.println("--- 2.GO: to move from current location ---");
+				System.out.println("--- 3.QUIT: to retrieve new item ---");
 				break;
-			case("look"):
+			case("LOOK"):
 				System.out.println("You appear to be in:" + currentNode.getNodeName() + 
 						"\nLocation Description: " + loc.getDescription());
 			for(int z = 0; z<currentNode.getCharacter().size(); z++){
 				System.out.println(currentNode.getCharacter() + " a: "+ "\n"); 
 			}
 			break;
-			case("go"):
+			case("GO"):
 				System.out.println("Locations Available:" + loc.getTitle() 
 						+ "\nDirection:" + loc.getDirection());
 				System.out.println("Enter your choice of locations: ");
 				choice = sc.nextLine();
 				nextNode(choice);
 				break;
-			case("get")://pick an item from your items List and use it (add health)
+			case("GET"):
+				System.out.println("");
 				break;
-			case("pick up")://add item to your items List
+			case("USE"):
+				System.out.println("");
 				break;
-			case("attack")://pick a character currently there and calculate damage
-				break;
-			case("use")://pick an item from your items List and use it (add health)
-				break;
-			case("quit"):
+			case("QUIT"):
 				System.out.println("Fairwell "+ playrName +"\nHopefully we will meet again");
 				play = false;
 			break;
-        
         	}
         }
-        
-		
 	}
 	
 	private static void nextNode(String choice) {
-		
 	}
 
 	public void characters(char[] buffer, int start, int length) {
@@ -206,6 +194,4 @@ public class Parser extends DefaultHandler{
 			System.out.println(it.next().toString());
 		}
 	}
-
-	
 }
